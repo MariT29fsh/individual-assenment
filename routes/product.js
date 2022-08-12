@@ -8,5 +8,4 @@ router.route('/create').post(createProduct);
 //router.get('/all', displayProduct );
 //router.delete('/product/delete/:id',  deleteProduct );
 //router.post('/create', createProduct );
-console.log('llega aqui');
 module.exports = router;

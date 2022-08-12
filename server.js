@@ -76,11 +76,6 @@ app.post('/api/upload', async (req, res) => {
     }
 });
 
-/*const port = process.env.PORT || 3001;
-app.listen(port, () => {
-    console.log('listening on 3001');
-});*/
-//
 app.use(notFound);
 app.use(errorHandler);
 const PORT= process.env.PORT || 3001;

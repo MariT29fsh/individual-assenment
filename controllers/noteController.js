@@ -12,8 +12,6 @@ cloudinary.config({
 const createProduct = asyncHandler(async(req, res) =>{
 
         const {title, description, image} = req.body;
-        console.log(req.body);
-        console.log('llega a notecontroller')
         try {
             const result = await cloudinary.v2.uploader.upload(image, {
                 folder: "notes",
