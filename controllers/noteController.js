@@ -6,8 +6,8 @@ const cloudinary= require('cloudinary');
 cloudinary.config({
     cloud_name: 'dmc99lkmj',
     api_key: '429392565885329',
-    api_secret: 'HSzNIzPlmpQzV_3xWLEwBVVxJpM'
-})
+    api_secret: 'HSzNIzPlmpQzV_3xWLEwBVVxJpM',
+});
 
 const createProduct = asyncHandler(async(req, res) =>{
 

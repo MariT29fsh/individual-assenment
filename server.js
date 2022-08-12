@@ -5,10 +5,10 @@ const connectDB = require("./config/db");
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/product');
 const { notFound, errorHandler } = require("./middlewares/errorMiddleware");
-const {cloudinary} =require('./utils/cloudinary')
+const {cloudinary} =require('./utils/cloudinary');
 const multer= require('multer');
 const upload=multer();
-const sanitizeHTML =require('sanitize-html')
+const sanitizeHTML =require('sanitize-html');
 const app = express();
 
 dotenv.config();
@@ -24,9 +24,6 @@ origin:'http://localhost:3000',
 credentials:true,            //access-control-allow-credentials:true
 optionSuccessStatus:200
 }
-
-app.use(express.static('public'));
-app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 /*app.get('/', (req,res)=> {
