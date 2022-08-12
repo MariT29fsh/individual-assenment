@@ -24,7 +24,6 @@ origin:'http://localhost:3000',
 credentials:true,            //access-control-allow-credentials:true
 optionSuccessStatus:200
 }
-app.use(cors());
 
 app.use(express.static('public'));
 app.use(express.json({ limit: '50mb' }));
